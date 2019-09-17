@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Team Hover Effect</title>
+    <style media="screen">
+    body {
+      background-color:  #e5e5e5;
+    }
+    .our-team{
+        border: 1px solid #dedede;
+        text-align: center;
+        color: #8b2635;
+        overflow: hidden;
+        transition: all 0.3s ease 0s;
+    }
+
+    .our-team:hover{
+        background: #8b2635;
+        color: #fff;
+    }
+
+    .our-team .pic{ position: relative; }
+
+    .our-team .pic img{
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease 0s;
+    }
+
+    .our-team:hover .pic img{ transform: translateY(-20px); }
+
+    .our-team .social{
+        width: 20%;
+        height: 100%;
+        background: #8b2635;
+        padding: 20px 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team:hover .social{ left: 0; }
+
+    .our-team .social li{ display: block; }
+
+    .our-team .social li a{
+        display: block;
+        padding: 10px 0;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.5s ease 0s;
+    }
+
+    .our-team .social li a:hover{ color: #ff9b19; }
+
+    .our-team .team-content{ padding: 25px 0; }
+
+    .our-team .title{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+    }
+
+    .our-team .post{
+        display: block;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    @media only screen and (max-width: 990px){
+        .our-team{ margin-bottom: 30px; }
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row">
+         <div class="col-md-3 col-sm-6">
+             <div class="our-team">
+                 <div class="pic">
+                     <img src="srt.png">
+                     <ul class="social">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-instagram"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                     </ul>
+                 </div>
+                 <div class="team-content">
+                     <h3 class="title">SR Tutorials</h3>
+                     <span class="post">Web Developer</span>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+             <div class="our-team">
+                 <div class="pic">
+                     <img src="sarvesh.png">
+                     <ul class="social">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-instagram"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                     </ul>
+                 </div>
+                 <div class="team-content">
+                     <h3 class="title">Sarvesh Mishra</h3>
+                     <span class="post">Web Designer</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>
+
+  </body>
+</html>
